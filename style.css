@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+nav{
+    background-color: #270082;
+    height: 85px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.logo h1{
+    font-size: 3.2rem;
+}
+
+.menu li{
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    text-decoration: underline;
+}
+
+/* navbar ended */
+
+.hero-section{
+    height: 100vh;
+    background-image: url(./images/hero_image.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.hero-content{
+    text-align: center;
+    padding-top: 300px;
+}
+
+.hero-content h1{
+    font-size: 10rem;
+    padding-bottom: 20px;
+}
+
+.hero-content h3{
+    font-size: 3.1rem;
+    padding-bottom: 25px;
+}
+
+.hero-content p{
+    font-size: 1.4rem;
+    padding: 0 30px;
+}
+
+/* hero section ended */
+
+.music-section{
+    height: 600px;
+    background-color: #281154;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.music-content h2{
+    font-size: 2.4rem;
+    padding-bottom: 25px;
+}
+
+.music-content h4{
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+}
+
+.music-content button{
+    background-color: #DC0000;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border: none;
+    padding: 8px 14px;
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+.music-content p{
+    font-size: 1.5rem;
+    padding-bottom: 35px;
+}
+
+
+/* music section ended */
+
+
+.movie-section{
+    margin-top: 500px;
+}
+
+.movie-content{
+    text-align: center;
+}
+
+.movie-content h3{
+    font-size: 2rem;
+}
+
+.movie-content p{
+    font-size: 1.4rem;
+    padding: 45px 35px;
+}
+
+.movie-content button{
+    font-size: 1.2rem;
+    background-color: #270082;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    margin-bottom: 50px;
+}
+
+/* movies section ended */
+
+.entertainment-section{
+    margin-top: 60px;
+    height: 800px;
+    background-image: url(./images/video.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+}
+
+.entertainment-content{
+    padding-top: 250px;
+}
+
+.entertainment-content h3{
+    font-size: 2rem;
+}
+
+.entertainment-content p{
+    font-size: 1.4rem;
+    padding: 40px 30px;
+}
+
+/* entertainment section ended */
+
+.card-section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-img img{
+    width: 468px;
+}
+
+.card-content{
+    width: 680px;
+}
+
+.card-content h3{
+    font-size: 1.9rem;
+    padding-bottom: 40px;
+}
+
+.p{
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
+.para{
+    padding-top: 10px;
+    font-size: 1.4rem;
+}
+
+.card-content button{
+    margin: 30px 0px;
+    border: none;
+    background-color: #270082;
+    color: #ffffff;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+
+/* card section ended */
+
+
+footer{
+    background-color: #1B0058;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+
+.divider{
+    border: 1px solid white;
+    width: 115px;
+}
+
+footer h4{
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding-bottom: 10px;
+    letter-spacing: 0.12rem;
+}
+
+footer ul{
+    padding-top: 5px;
+    list-style-type: none;
+}
+
+footer li{
+    font-size: 1.4rem;
+    color: #ffffff;
+    padding-top: 3px;
+}
+
+.after-footer{
+    background-color: #270082;
+    height: 60px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.after-footer p{
+    font-size: 1.7rem;
+}
+
+
+@media (max-width: 700px) {
+    html{
+        font-size: 48%;
+    }
+
+    nav{
+        padding: 10px;
+    }
+
+    .menu li{
+        margin-right: 10px;
+    }
+
+    .img img{
+        width: 370px;
+        padding-top: 30px;
+    }
+
+    .width{
+        width: 390px;
+    }
+    .hero-section{
+        object-fit: cover;
+    }
+
+    .card-section{
+        flex-direction: column;
+    }
+
+    .card-img img{
+        width: 300px;
+    }
+
+    .card-content{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .movie-section{
+        margin-top: 80px;
+    }
+
+    footer{
+    flex-direction: column;
+    height: 650px;
+    align-items: start;
+    padding-top: 10px;
+    padding-left: 30px;
+    }
+
+    .hero-content{
+        padding-top: 200px;
+    }
+
+    .entertainment-section{
+        height: 600px;
+    }
+
+    .entertainment-content{
+        padding-top: 220px;
+        /* padding-bottom: 30px; */
+    }
+
+    .card-content h3{
+        padding-bottom: 10px;
+    }
+
+    .card-content button{
+        margin: 10px 0;
+        padding: 6px 10px;
+        font-size: 1.2rem;
+    }
+
+    .card-img img{
+        width: 280px;
+        padding-top: 30px;
+    }
+
+    .para{
+        padding-top: 0px;
+    }
+
+    .p{
+        padding-bottom: 10px;
+    }
+
+    footer h4{
+        padding-top: 25px;
+    }
+
+    .after-footer{
+        height: 40px;
+    }
+}
